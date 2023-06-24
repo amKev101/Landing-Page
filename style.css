@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?amily=Poppins:wght@100;300;400;600&display=swap');
+
+:root{
+    --brown: #833517;
+  }
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: .2s linear;
+  }
+  .btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    background: var(--brown);
+    color: #fff;
+    font-size: 1.7rem;
+    cursor: pointer;
+  }
+  .btn:hover{
+    background: #222;
+  }
+
+  html{
+    font-size: 62.5%;
+    /* overflow-x: hidden; */
+    scroll-behavior: smooth;
+  }
+  .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: var(--brown);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+  }
+  .header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #ffffff;
+  }
+  .header .logo i{
+    color: #222;
+    padding-right: .5rem;
+  }
+  .header .navbar a{
+    font-size: 1.7rem;
+    color: #ffffff;
+    margin: 0 1rem;
+  }
+  .header .navbar a:hover{
+    color: #222;
+  }
+  
+  .header .icons div{
+    font-size: 2.5rem;
+    margin-left: 1.7rem;
+    cursor: pointer;
+    color: #fff;
+  }
+  .header .icons div:hover{
+    color: #222;
+  }
+    
+  #menu-btn{
+    display: none;
+  }     
+
+
+
+  .home{
+    padding-top: 14rem;
+    background: url(img/features-3.png) no-repeat;
+    background-size: cover;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    /*  display: none;  */
+  }
+  
+  .home .slides-container .slide .content{
+    flex: 1 1 40rem;
+    animation: fadeLeft .4s linear .4s backwards;
+  }
+
+  .home .slides-container .slide .content span{
+    color: #000;
+    font-size: 2.5rem;
+  }
+
+  .home .slides-container .slide .content h3{
+    font-size: 5rem;
+    color: #222;
+    padding: .5rem 0;
+  }
+
+  .home .slides-container .slide .img{
+    flex: 1 1 40rem;
+    margin: 3rem 0;
+  }
+/*
+  .home .slides-container .slide .img img{
+    width: 100%;
+    animation: FadeUp .4s linear;
+  }  */
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+  /* media queries   */
+  @media (max-width: 991px){
+    html{
+      font-size: 55%;
+    }
+    .header{
+      padding: 2rem;
+    }
+  }
+  
+  @media (max-width: 768px){
+    #menu-btn{
+      display: inline-block;
+    }
+
+
+  /*    Start Mathz        */
+
+.header .navbar{
+  position: absolute;
+  top: 99%;
+  left: 0;
+  right: 0;
+  background: #222;  
+  border-top: 0.1rem solid rgba(0,0,0,0.1);
+  border-bottom: 0.1rem solid rgba(0,0,0,0.1);
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+.header .navbar.active{
+clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.header .navbar a{
+margin: 1.5rem;
+padding: 1.5rem;
+background: var(--brown);
+font-size: 2rem;
+display: block;
+border-radius: .5rem;
+}
+/*    End Mathz        */
+
+}
+
+@media (max-width: 450px){
+    html{
+        font-size: 50%;
+    }
+
+}
+
+
+
